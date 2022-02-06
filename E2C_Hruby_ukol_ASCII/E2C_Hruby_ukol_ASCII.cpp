@@ -16,7 +16,7 @@ int main(void) {
 		for (int i = 1; i <= 26; i++) {
 			ascii += 1;
 			fwrite(&ascii, sizeof(int), 1, soubor);
-			fprintf(soubor, "%x\n", ascii);
+			fprintf(soubor, "0x%x\n", ascii);
 		}
 }
 	
